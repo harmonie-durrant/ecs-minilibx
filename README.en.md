@@ -35,7 +35,7 @@ OBJS = $(SRCS:.c=.o)
 # Flags for the C compiler (42 requirements)
 CFLAGS = -Wall -Wextra -Werror
 # Flags for the minilibx and ecs library
-LDFLAGS = -Lecs-minilibx -lecs -lmlx -lXext -lX11 -lm
+LDFLAGS = -L./ecs-minilibx -lecs -L./ecs-minilibx/minilibx-linux -lmlx -lXext -lX11 -lm
 
 # Rule to compile the project
 all: $(NAME)
@@ -63,6 +63,33 @@ re: fclean all
 
 .PHONY: all lib clean fclean re
 ```
+
+## Coming soon
+
+- [x] Add functions to create entities and components
+- [x] Add functions to add/remove entities and components
+
+- [] Add basic component types
+- [] IsActive (to activate/deactivate entities)
+- [] Camera conrtoller (to move the camera)
+- [] Collider (hitbox)
+- [] Sound (to play sounds)
+- [] Stats (to store hp, mana, custom stats...)
+
+- [] Add 2D component types (on screen)
+- [] Transform2D (position(x,y), rotation(x,y), scale(x,y))
+- [] Controller2D (to move 2D entities)
+- [] Animator (to animate 2D sprites)
+- [] Sprite (to draw 2D images)
+
+- [] Add 3D component types (in the space in front of the camera)
+- [] Transform3D (position(x,y,z), rotation(x,y,z), scale(x,y,z))
+- [] Controller3D (to move 3D entities)
+- [] SpriteCube (to draw 3D cubes)
+- [] Raycast (to draw 3D entities)
+
+- [] Add function to draw 2D entities
+- [] Add function to draw 3D entities
 
 ## Contributors
 
