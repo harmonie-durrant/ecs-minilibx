@@ -18,3 +18,13 @@ Mon ECS est basé sur l'ECS d'unity, qui est un moteur de jeu populaire. Il est 
 
 - [harmonie-durrant](https://www.github.com/harmonie-durrant) (Créatrice du projet)
 - [42Paris](https://github.com/42Paris/minilibx-linux/graphs/contributors) (Auteurs de la minilibx)
+
+- [Faire un don sur buymeacoffee](https://www.buymeacoffee.com/harmonie)
+
+## Comment contribuer
+
+Si vous souhaitez contribuer à ce projet, veuillez lire le fichier [CONTRIBUTING](CONTRIBUTING.md).
+
+## License
+
+Ce projet est sous licence, vous pouvez trouver la licence dans le fichier [LICENSE](LICENSE).

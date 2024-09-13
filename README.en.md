@@ -14,7 +14,67 @@ ECS is a programming model that allows you to separate data from behavior. In an
 
 My ECS is based on Unity's entity system. Unity is a popular game engine. It is designed to be simple and easy to use.
 
+## How to use
+
+To use the library in your project, you need to include the header file `ecs.h` in your source code. You also need to link the library to your project.
+
+First go to your project directory and clone this repository:
+
+```bash
+git clone --recurse-submodules https://github.com/harmonie-durrant/ecs-minilibx.git
+```
+
+Use this makefile as a guide to compile your project:
+```makefile
+# Name of the executable
+NAME = my_project
+# List of source files
+SRCS = main.c
+# List of object files
+OBJS = $(SRCS:.c=.o)
+# Flags for the C compiler (42 requirements)
+CFLAGS = -Wall -Wextra -Werror
+# Flags for the minilibx and ecs library
+LDFLAGS = -Lecs-minilibx -lecs -lmlx -lXext -lX11 -lm
+
+# Rule to compile the project
+all: $(NAME)
+
+# Compile the library
+lib:
+	make -s -C ecs-minilibx
+
+# Compile the project (runs by default, also compiles the ecs library)
+$(NAME): $(OBJS) lib
+	gcc $(CFLAGS) $(OBJS) -o $(NAME) $(LDFLAGS)
+
+# Remove object files
+clean:
+	make -s -C ecs-minilibx clean
+	rm -f $(OBJS)
+
+# Remove object files and the executable
+fclean: clean
+	make -s -C ecs-minilibx fclean
+	rm -f $(NAME)
+
+# Remove all temporary files and recompile the project
+re: fclean all
+
+.PHONY: all lib clean fclean re
+```
+
 ## Contributors
 
 - [harmonie-durrant](https://www.github.com/harmonie-durrant) (projet creator)
 - [42Paris](https://github.com/42Paris/minilibx-linux/graphs/contributors) (minilibx contributors)
+
+- [Donate to my Buy Me A Coffee page](https://www.buymeacoffee.com/harmonie)
+
+## Contributing
+
+If you want to contribute to this project, please read the [CONTRIBUTING](CONTRIBUTING.md) file.
+
+## License
+
+This project is licensed, you can find the license in the [LICENSE](LICENSE) file.
