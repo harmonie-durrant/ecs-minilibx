@@ -69,6 +69,8 @@ re: fclean all
 - [x] Add functions to create entities and components
 - [x] Add functions to add/remove entities and components
 
+- [] Add documentation for the library
+
 - [] Add basic component types
 - [] IsActive (to activate/deactivate entities)
 - [] Camera conrtoller (to move the camera)
