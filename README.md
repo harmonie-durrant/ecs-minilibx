@@ -68,29 +68,29 @@ re: fclean all
 - [x] Ajouter des fonctions pour créer des entités et des composants
 - [x] Ajouter des fonctions pour ajouter/supprimer des entités et des composants
 
-- [] Ajouter de la documentation pour la bibliothèque
+- [ ] Ajouter de la documentation pour la bibliothèque
 
-- [] Ajouter des types des composants de base
-	- [] IsActive (pour activer/désactiver des entités)
-	- [] Camera conrtoller (pour déplacer la caméra)
-	- [] Collider (hitbox)
-	- [] Sound (pour jouer des sons)
-	- [] Stats (pour stocker pv, mana, custom stats...)
+- [ ] Ajouter des types des composants de base
+	- [ ] IsActive (pour activer/désactiver des entités)
+	- [ ] Camera conrtoller (pour déplacer la caméra)
+	- [ ] Collider (hitbox)
+	- [ ] Sound (pour jouer des sons)
+	- [ ] Stats (pour stocker pv, mana, custom stats...)
 
-- [] Ajouter des types des composants 2D (sur l'écran)
-	- [] Transform2D (position(x,y), rotation(x,y), scale(x,y))
-	- [] Controller2D (pour déplacer des entités 2D)
-	- [] Animator (pour animer des sprites 2D)
-	- [] Sprite (pour dessiner des images 2D)
+- [ ] Ajouter des types des composants 2D (sur l'écran)
+	- [ ] Transform2D (position(x,y), rotation(x,y), scale(x,y))
+	- [ ] Controller2D (pour déplacer des entités 2D)
+	- [ ] Animator (pour animer des sprites 2D)
+	- [ ] Sprite (pour dessiner des images 2D)
 
-- [] Ajouter des types des composants 3D (dans l'espace devant la caméra)
-	- [] Transform3D (position(x,y,z), rotation(x,y,z), scale(x,y,z))
-	- [] Controller3D (pour déplacer des entités 3D)
-	- [] SpriteCube (pour dessiner des cubes 3D)
-	- [] Raycast (pour dessiner les entités 3D)
+- [ ] Ajouter des types des composants 3D (dans l'espace devant la caméra)
+	- [ ] Transform3D (position(x,y,z), rotation(x,y,z), scale(x,y,z))
+	- [ ] Controller3D (pour déplacer des entités 3D)
+	- [ ] SpriteCube (pour dessiner des cubes 3D)
+	- [ ] Raycast (pour dessiner les entités 3D)
 
-- [] Ajouter une fonction pour dessiner des entités 2D
-- [] Ajouter une fonction pour dessiner des entités 3D
+- [ ] Ajouter une fonction pour dessiner des entités 2D
+- [ ] Ajouter une fonction pour dessiner des entités 3D
 
 ## Auteurs
 
